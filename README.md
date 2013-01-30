@@ -34,3 +34,13 @@ HEAD is now at 561eeef test 2
 I've found this to be invaluable when working with Git, since you don't have
 to type `git status` (or `gs` for those that made the alias) so often, and
 don't have to spend the time reading through the output.
+
+## Installation
+
+Either source `git-ps1.sh` from your `.bashrc` or copy and paste the contents.
+
+~~~
+(appended to .bashrc)
+
+source /<path>/git-ps1.sh
+~~~
