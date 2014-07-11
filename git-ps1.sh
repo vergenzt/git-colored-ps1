@@ -51,6 +51,16 @@ $Yellow\W \
             || echo -n '$BRed*';\
   git status --porcelain 2> /dev/null | grep -q ^?? \
         && echo -n '$Gray*';\
+        echo -n ' ';\
     fi\
 )\
-$White\$SEP$ "
+$White\$SEP\
+\$(\
+    if [ \$USER = 'root' ]; then\
+        echo -n '$Yellow#';\
+    else\
+        echo -n '$Green$';\
+    fi;\
+)\
+$White "
+
